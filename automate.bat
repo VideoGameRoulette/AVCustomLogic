@@ -15,13 +15,6 @@ git commit -m "%commitMessage%"
 REM Get user input for new branch name
 set /p branchName=Enter new branch name:
 
-REM Check for whitespace in branch name
-set "branchName=!branchName =!"
-if "%branchName%" == "" (
-    echo Invalid branch name. Please try again.
-    goto :EOF
-)
-
 REM Create and checkout new branch with user inputted name
 git checkout -b %branchName%
 
