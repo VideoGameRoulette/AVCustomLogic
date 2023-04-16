@@ -34,7 +34,7 @@ REM Create and checkout new branch with user inputted name
 git checkout -b %branchName%
 
 REM Push changes to new branch
-git push upstream %branchName%
+git push --set-upstream origin %branchName%
 
 REM Pause script
 pause
