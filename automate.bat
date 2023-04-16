@@ -15,6 +15,9 @@ git commit -m "%commitMessage%"
 REM Get user input for new branch name
 set /p branchName=Enter new branch name:
 
+REM Remove colon character from branch name
+set branchName=%branchName::=%
+
 REM Check for whitespace in branch name
 set "branchName=!branchName: =!"
 if "%branchName%" == "" (
