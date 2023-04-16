@@ -9,14 +9,6 @@ git add .
 REM Get user input for commit message
 set /p commitMessage=Enter commit message:
 
-REM Check for whitespace in commit message
-setlocal enabledelayedexpansion
-set "commitMessage=!commitMessage: =!"
-if "%commitMessage%" == "" (
-    echo Invalid commit message. Please try again.
-    goto :EOF
-)
-
 REM Commit changes with user inputted message
 git commit -m "%commitMessage%"
 
