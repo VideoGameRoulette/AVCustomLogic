@@ -18,7 +18,7 @@ git clone https://github.com/VideoGameRoulette/AVCustomLogic.git
 ```
 
 ### Usage
-- You can edit the locations_custom.json using the editor provided [here]()
+- You can edit the locations_custom.json using the editor provided [here](https://videogameroulette.github.io/AVLogicEditorJS/locations)
 - When edits are finished for the night you can save and take the new file you got from website and replace the one in the repo you cloned
 - run the automate.bat file and it'll prompt you through the steps to create a new branch with you new changes and push it to github
 - once pushed you can submit a pull request and i'll review and approve the logic changes
